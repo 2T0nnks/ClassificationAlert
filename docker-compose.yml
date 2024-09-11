@@ -7,9 +7,9 @@ services:
       POSTGRES_PASSWORD: secret
       POSTGRES_USER: myuser
     volumes:
-      - ./dev_env/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./ci/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
-      - "5432:5432"
+      - 5432:5432
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin
@@ -19,7 +19,12 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@root.com
       PGADMIN_DEFAULT_PASSWORD: admin
     volumes:
-      - ./dev_env/servers.json:/pgadmin4/servers.json
-      - ./dev_env/pgpassfile:/pgpassfile
+      - ./ci/servers.json:/pgadmin4/servers.json
+      - ./ci/pgpassfile:/pgpassfile
     depends_on:
       - postgres
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "1025:1025"  # Porta SMTP para receber e-mails
+      - "8025:8025"  # Porta da interface web
