@@ -2,6 +2,7 @@
 
 ### steps
 
+* git clone https://github.com/2T0nnks/ClassificationAlert.git
 * need python 3.12
 * need docker
 * pip install -r requirements.txt
@@ -20,14 +21,26 @@
 - Start docker
 - python3 app.py or run via pycharm / vscode
 
-Access the mailhog url to check the application is working.
-The urls:
 
-http://0.0.0.0:8025/
-or
-http://127.0.0.1:8025/
-or
-"http://localhost:8025"
+
+Access the mailhog url to check the application is working.
+
+ ### Urls:
+    
+    http://0.0.0.0:8025/
+    or
+    http://127.0.0.1:8025/
+
+    --> "http://localhost:8025"
+
+### Url of pgadmin for administrate db
+
+    http://127.0.0.1:8281/
+
+login --> admin@root.com
+pass -->  admin
+
+password for myuser --> secret
 
 ---
 ### obs
