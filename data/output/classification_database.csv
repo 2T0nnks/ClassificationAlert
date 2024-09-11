@@ -1,0 +1,3 @@
+id,db_name,owner_email,manager_email,classification
+cc692b86-7599-4f41-9750-9ad25f98d47b,usersdb,john.doe@company.com,lucas.sec@company.com,high
+948413f3-bd59-4714-b390-788caf663bca,marketingdb,jane.smith@company.com,anna@company.com,medium
