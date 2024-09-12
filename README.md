@@ -7,7 +7,7 @@
 * need docker
 * pip install -r requirements.txt
 * docker compose up -d // sudo docker-compose up -d
-* python app.py
+* python main.py
 
 ### or use an installation script
 
