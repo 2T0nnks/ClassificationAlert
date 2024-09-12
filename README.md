@@ -7,7 +7,7 @@
 * need docker
 * pip install -r requirements.txt
 * docker compose up -d // sudo docker-compose up -d
-* python main.py
+* python /src/main.py
 
 ### or use an installation script
 
@@ -19,7 +19,7 @@
 
 - Install the requirements
 - Start docker
-- python3 app.py or run via pycharm / vscode
+- python3 /src/main.py or run via pycharm / vscode
 
 
 
